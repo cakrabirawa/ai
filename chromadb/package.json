@@ -1,0 +1,11 @@
+{
+  "name": "chromadb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "chromadb": "^1.9.2",
+    "chromadb-default-embed": "^2.13.2",
+    "nodemon": "^3.1.7"
+  }
+}

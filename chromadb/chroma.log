@@ -1,0 +1,217 @@
+[33mWARNING[0m:  [13-11-2024 09:23:49] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [13-11-2024 09:23:50] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [13-11-2024 09:23:50] Starting component System
+[36mDEBUG[0m:    [13-11-2024 09:23:50] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [13-11-2024 09:23:50] Starting component SqliteDB
+[36mDEBUG[0m:    [13-11-2024 09:23:51] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [13-11-2024 09:23:51] Starting component Posthog
+[36mDEBUG[0m:    [13-11-2024 09:23:51] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [13-11-2024 09:23:51] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [13-11-2024 09:23:51] Starting component LocalExecutor
+[36mDEBUG[0m:    [13-11-2024 09:23:51] Starting component SegmentAPI
+[32mINFO[0m:     [13-11-2024 09:23:51] Started server process [[36m4544[0m]
+[32mINFO[0m:     [13-11-2024 09:23:51] Waiting for application startup.
+[32mINFO[0m:     [13-11-2024 09:23:51] Application startup complete.
+[32mINFO[0m:     [13-11-2024 09:23:51] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [13-11-2024 09:24:05] ::1:55443 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:24:05] ::1:55443 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:24:05] ::1:55443 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:24:06] Backing off send_request(...) for 0.7s (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+[32mINFO[0m:     [13-11-2024 09:24:22] Backing off send_request(...) for 1.7s (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+[32mINFO[0m:     [13-11-2024 09:24:39] Backing off send_request(...) for 0.2s (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+[31mERROR[0m:    [13-11-2024 09:24:54] Giving up send_request(...) after 4 tries (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+[32mINFO[0m:     [13-11-2024 09:24:56] ::1:55504 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:24:56] ::1:55504 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:24:56] ::1:55504 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 409
+[32mINFO[0m:     [13-11-2024 09:25:10] Backing off send_request(...) for 0.4s (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+[32mINFO[0m:     [13-11-2024 09:25:25] Backing off send_request(...) for 0.1s (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+[32mINFO[0m:     [13-11-2024 09:25:40] Backing off send_request(...) for 1.0s (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+[31mERROR[0m:    [13-11-2024 09:25:56] Giving up send_request(...) after 4 tries (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+[32mINFO[0m:     [13-11-2024 09:26:26] Shutting down
+[32mINFO[0m:     [13-11-2024 09:26:26] Waiting for application shutdown.
+[36mDEBUG[0m:    [13-11-2024 09:26:26] Stopping component System
+[36mDEBUG[0m:    [13-11-2024 09:26:26] Stopping component SegmentAPI
+[36mDEBUG[0m:    [13-11-2024 09:26:26] Stopping component LocalExecutor
+[36mDEBUG[0m:    [13-11-2024 09:26:26] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [13-11-2024 09:26:26] Stopping component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [13-11-2024 09:26:26] Stopping component Posthog
+[36mDEBUG[0m:    [13-11-2024 09:26:26] Stopping component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [13-11-2024 09:26:26] Stopping component SqliteDB
+[36mDEBUG[0m:    [13-11-2024 09:26:26] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [13-11-2024 09:26:26] Application shutdown complete.
+[32mINFO[0m:     [13-11-2024 09:26:26] Finished server process [[36m4544[0m]
+[33mWARNING[0m:  [13-11-2024 09:26:33] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [13-11-2024 09:26:34] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [13-11-2024 09:26:34] Starting component System
+[36mDEBUG[0m:    [13-11-2024 09:26:34] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [13-11-2024 09:26:34] Starting component SqliteDB
+[36mDEBUG[0m:    [13-11-2024 09:26:34] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [13-11-2024 09:26:34] Starting component Posthog
+[36mDEBUG[0m:    [13-11-2024 09:26:34] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [13-11-2024 09:26:34] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [13-11-2024 09:26:34] Starting component LocalExecutor
+[36mDEBUG[0m:    [13-11-2024 09:26:34] Starting component SegmentAPI
+[32mINFO[0m:     [13-11-2024 09:26:34] Started server process [[36m7560[0m]
+[32mINFO[0m:     [13-11-2024 09:26:34] Waiting for application startup.
+[32mINFO[0m:     [13-11-2024 09:26:34] Application startup complete.
+[32mINFO[0m:     [13-11-2024 09:26:34] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [13-11-2024 09:26:45] ::1:55856 - "GET / HTTP/1.1" 404
+[32mINFO[0m:     [13-11-2024 09:26:50] Backing off send_request(...) for 0.9s (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+[32mINFO[0m:     [13-11-2024 09:26:54] ::1:55897 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:26:54] ::1:55897 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:26:54] ::1:55897 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 409
+[32mINFO[0m:     [13-11-2024 09:27:06] Backing off send_request(...) for 1.6s (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+[32mINFO[0m:     [13-11-2024 09:27:16] ::1:55928 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:27:16] ::1:55928 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:27:16] ::1:55928 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 409
+[32mINFO[0m:     [13-11-2024 09:27:22] Backing off send_request(...) for 0.3s (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+[31mERROR[0m:    [13-11-2024 09:27:37] Giving up send_request(...) after 4 tries (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+[32mINFO[0m:     [13-11-2024 09:27:44] ::1:55964 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:27:44] ::1:55964 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:27:44] ::1:55964 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 409
+[32mINFO[0m:     [13-11-2024 09:28:10] ::1:55983 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:28:10] ::1:55983 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:28:10] ::1:55983 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 409
+[32mINFO[0m:     [13-11-2024 09:29:16] ::1:56086 - "GET / HTTP/1.1" 404
+[32mINFO[0m:     [13-11-2024 09:29:20] ::1:56086 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:29:38] ::1:56149 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:29:38] ::1:56149 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:29:38] ::1:56149 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 409
+[32mINFO[0m:     [13-11-2024 09:29:41] ::1:56151 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:29:41] ::1:56151 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:29:41] ::1:56151 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 409
+[32mINFO[0m:     [13-11-2024 09:31:30] ::1:56267 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:31:30] ::1:56267 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:31:30] ::1:56267 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:31:41] ::1:56277 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:31:41] ::1:56277 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:31:41] ::1:56277 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 409
+[32mINFO[0m:     [13-11-2024 09:31:45] Backing off send_request(...) for 0.4s (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+[32mINFO[0m:     [13-11-2024 09:32:00] Backing off send_request(...) for 0.9s (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+[32mINFO[0m:     [13-11-2024 09:32:16] Backing off send_request(...) for 1.0s (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+[31mERROR[0m:    [13-11-2024 09:32:32] Giving up send_request(...) after 4 tries (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+[32mINFO[0m:     [13-11-2024 09:33:25] ::1:56432 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:33:25] ::1:56432 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:33:25] ::1:56432 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 409
+[32mINFO[0m:     [13-11-2024 09:33:28] ::1:56434 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:33:28] ::1:56434 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:33:28] ::1:56434 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 409
+[32mINFO[0m:     [13-11-2024 09:44:23] ::1:56960 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:44:23] ::1:56960 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:44:23] ::1:56960 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 409
+[32mINFO[0m:     [13-11-2024 09:44:38] ::1:56974 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:44:39] ::1:56974 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:44:39] ::1:56974 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 409
+[32mINFO[0m:     [13-11-2024 09:45:32] ::1:57028 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:45:32] ::1:57028 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:45:32] ::1:57028 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 409
+[32mINFO[0m:     [13-11-2024 09:45:41] Shutting down
+[32mINFO[0m:     [13-11-2024 09:45:42] Waiting for application shutdown.
+[36mDEBUG[0m:    [13-11-2024 09:45:42] Stopping component System
+[36mDEBUG[0m:    [13-11-2024 09:45:42] Stopping component SegmentAPI
+[36mDEBUG[0m:    [13-11-2024 09:45:42] Stopping component LocalExecutor
+[36mDEBUG[0m:    [13-11-2024 09:45:42] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [13-11-2024 09:45:42] Stopping component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [13-11-2024 09:45:42] Stopping component Posthog
+[36mDEBUG[0m:    [13-11-2024 09:45:42] Stopping component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [13-11-2024 09:45:42] Stopping component SqliteDB
+[36mDEBUG[0m:    [13-11-2024 09:45:42] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [13-11-2024 09:45:42] Application shutdown complete.
+[32mINFO[0m:     [13-11-2024 09:45:42] Finished server process [[36m7560[0m]
+[33mWARNING[0m:  [13-11-2024 09:45:52] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [13-11-2024 09:45:52] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [13-11-2024 09:45:52] Starting component System
+[36mDEBUG[0m:    [13-11-2024 09:45:52] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [13-11-2024 09:45:52] Starting component SqliteDB
+[36mDEBUG[0m:    [13-11-2024 09:45:52] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [13-11-2024 09:45:52] Starting component Posthog
+[36mDEBUG[0m:    [13-11-2024 09:45:52] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [13-11-2024 09:45:52] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [13-11-2024 09:45:52] Starting component LocalExecutor
+[36mDEBUG[0m:    [13-11-2024 09:45:52] Starting component SegmentAPI
+[32mINFO[0m:     [13-11-2024 09:45:52] Started server process [[36m6500[0m]
+[32mINFO[0m:     [13-11-2024 09:45:52] Waiting for application startup.
+[32mINFO[0m:     [13-11-2024 09:45:52] Application startup complete.
+[32mINFO[0m:     [13-11-2024 09:45:52] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [13-11-2024 09:46:08] Backing off send_request(...) for 0.3s (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+[32mINFO[0m:     [13-11-2024 09:46:09] ::1:57045 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:46:09] ::1:57045 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:46:09] ::1:57045 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 409
+[32mINFO[0m:     [13-11-2024 09:46:18] ::1:57047 - "GET /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:46:23] Backing off send_request(...) for 0.8s (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+[32mINFO[0m:     [13-11-2024 09:46:39] Backing off send_request(...) for 1.5s (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+[31mERROR[0m:    [13-11-2024 09:46:55] Giving up send_request(...) after 4 tries (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+[32mINFO[0m:     [13-11-2024 09:46:59] Shutting down
+[32mINFO[0m:     [13-11-2024 09:46:59] Waiting for application shutdown.
+[36mDEBUG[0m:    [13-11-2024 09:46:59] Stopping component System
+[36mDEBUG[0m:    [13-11-2024 09:46:59] Stopping component SegmentAPI
+[36mDEBUG[0m:    [13-11-2024 09:46:59] Stopping component LocalExecutor
+[36mDEBUG[0m:    [13-11-2024 09:46:59] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [13-11-2024 09:46:59] Stopping component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [13-11-2024 09:46:59] Stopping component Posthog
+[36mDEBUG[0m:    [13-11-2024 09:46:59] Stopping component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [13-11-2024 09:46:59] Stopping component SqliteDB
+[36mDEBUG[0m:    [13-11-2024 09:46:59] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [13-11-2024 09:46:59] Application shutdown complete.
+[32mINFO[0m:     [13-11-2024 09:46:59] Finished server process [[36m6500[0m]
+[33mWARNING[0m:  [13-11-2024 09:47:09] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [13-11-2024 09:47:09] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [13-11-2024 09:47:09] Starting component System
+[36mDEBUG[0m:    [13-11-2024 09:47:09] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [13-11-2024 09:47:09] Starting component SqliteDB
+[36mDEBUG[0m:    [13-11-2024 09:47:10] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [13-11-2024 09:47:10] Starting component Posthog
+[36mDEBUG[0m:    [13-11-2024 09:47:10] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [13-11-2024 09:47:10] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [13-11-2024 09:47:10] Starting component LocalExecutor
+[36mDEBUG[0m:    [13-11-2024 09:47:10] Starting component SegmentAPI
+[32mINFO[0m:     [13-11-2024 09:47:10] Started server process [[36m1284[0m]
+[32mINFO[0m:     [13-11-2024 09:47:10] Waiting for application startup.
+[32mINFO[0m:     [13-11-2024 09:47:10] Application startup complete.
+[32mINFO[0m:     [13-11-2024 09:47:10] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [13-11-2024 09:47:18] ::1:57151 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:47:18] ::1:57151 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:47:18] ::1:57151 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:47:25] Backing off send_request(...) for 0.3s (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+[32mINFO[0m:     [13-11-2024 09:47:29] ::1:57156 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:47:29] ::1:57156 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 09:47:29] ::1:57156 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 409
+[32mINFO[0m:     [13-11-2024 09:47:40] Backing off send_request(...) for 0.9s (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+[32mINFO[0m:     [13-11-2024 09:47:56] Backing off send_request(...) for 3.1s (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+[31mERROR[0m:    [13-11-2024 09:48:15] Giving up send_request(...) after 4 tries (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+[32mINFO[0m:     [13-11-2024 09:48:30] Backing off send_request(...) for 0.2s (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+[32mINFO[0m:     [13-11-2024 09:48:45] Backing off send_request(...) for 0.2s (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+[32mINFO[0m:     [13-11-2024 09:49:01] Backing off send_request(...) for 1.4s (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+[31mERROR[0m:    [13-11-2024 09:49:17] Giving up send_request(...) after 4 tries (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+[32mINFO[0m:     [13-11-2024 13:48:48] ::1:50804 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 13:48:48] ::1:50804 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [13-11-2024 13:48:48] ::1:50804 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 409
+[32mINFO[0m:     [13-11-2024 13:48:55] Shutting down
+[32mINFO[0m:     [13-11-2024 13:48:55] Waiting for application shutdown.
+[36mDEBUG[0m:    [13-11-2024 13:48:55] Stopping component System
+[36mDEBUG[0m:    [13-11-2024 13:48:55] Stopping component SegmentAPI
+[36mDEBUG[0m:    [13-11-2024 13:48:55] Stopping component LocalExecutor
+[36mDEBUG[0m:    [13-11-2024 13:48:55] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [13-11-2024 13:48:55] Stopping component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [13-11-2024 13:48:55] Stopping component Posthog
+[36mDEBUG[0m:    [13-11-2024 13:48:55] Stopping component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [13-11-2024 13:48:55] Stopping component SqliteDB
+[36mDEBUG[0m:    [13-11-2024 13:48:55] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [13-11-2024 13:48:55] Application shutdown complete.
+[32mINFO[0m:     [13-11-2024 13:48:55] Finished server process [[36m1284[0m]
+[33mWARNING[0m:  [13-11-2024 13:49:04] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [13-11-2024 13:49:04] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [13-11-2024 13:49:04] Starting component System
+[36mDEBUG[0m:    [13-11-2024 13:49:04] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [13-11-2024 13:49:04] Starting component SqliteDB
+[36mDEBUG[0m:    [13-11-2024 13:49:04] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [13-11-2024 13:49:04] Starting component Posthog
+[36mDEBUG[0m:    [13-11-2024 13:49:04] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [13-11-2024 13:49:04] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [13-11-2024 13:49:04] Starting component LocalExecutor
+[36mDEBUG[0m:    [13-11-2024 13:49:04] Starting component SegmentAPI
+[32mINFO[0m:     [13-11-2024 13:49:04] Started server process [[36m24676[0m]
+[32mINFO[0m:     [13-11-2024 13:49:04] Waiting for application startup.
+[32mINFO[0m:     [13-11-2024 13:49:04] Application startup complete.
+[32mINFO[0m:     [13-11-2024 13:49:04] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [13-11-2024 13:49:20] Backing off send_request(...) for 0.5s (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
